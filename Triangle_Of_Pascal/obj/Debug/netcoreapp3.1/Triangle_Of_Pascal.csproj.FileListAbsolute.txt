@@ -1,0 +1,13 @@
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\bin\Debug\netcoreapp3.1\Triangle_Of_Pascal.exe
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\bin\Debug\netcoreapp3.1\Triangle_Of_Pascal.deps.json
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\bin\Debug\netcoreapp3.1\Triangle_Of_Pascal.runtimeconfig.json
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\bin\Debug\netcoreapp3.1\Triangle_Of_Pascal.runtimeconfig.dev.json
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\bin\Debug\netcoreapp3.1\Triangle_Of_Pascal.dll
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\bin\Debug\netcoreapp3.1\Triangle_Of_Pascal.pdb
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\obj\Debug\netcoreapp3.1\Triangle_Of_Pascal.csprojAssemblyReference.cache
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\obj\Debug\netcoreapp3.1\Triangle_Of_Pascal.AssemblyInfoInputs.cache
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\obj\Debug\netcoreapp3.1\Triangle_Of_Pascal.AssemblyInfo.cs
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\obj\Debug\netcoreapp3.1\Triangle_Of_Pascal.csproj.CoreCompileInputs.cache
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\obj\Debug\netcoreapp3.1\Triangle_Of_Pascal.dll
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\obj\Debug\netcoreapp3.1\Triangle_Of_Pascal.pdb
+C:\Users\arqui\source\repos\Square_Of_Pascal\Triangle_Of_Pascal\obj\Debug\netcoreapp3.1\Triangle_Of_Pascal.genruntimeconfig.cache
