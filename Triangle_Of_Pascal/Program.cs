@@ -21,70 +21,52 @@ namespace Triangle_Of_Pascal
         static void Main(string[] args)
         {
             Console.WriteLine("----------|   Triangle Of Pascal   |----------\n\n");
-            BuildTrianglePascal();
+
+            for (increment = totalRows; increment != 0; increment--)
+            {
+                for (childrenWhiteIncrement = 0; childrenWhiteIncrement < increment; childrenWhiteIncrement++)
+                    Console.Write(" ");
+
+                for (childrenNumberIncrement = 0; childrenNumberIncrement <= totalRows - increment; childrenNumberIncrement++)
+                {
+                    if (increment == totalRows)
+                    {
+                        Console.Write($"  {numberOne}");
+                        listOne.Add(numberOne);
+                    }
+                    else if (increment == totalRows - 1)
+                    {
+                        Console.Write($"  {numberOne}");
+                        listOne.Add(numberOne);
+                    }
+                    if (increment != totalRows && increment != totalRows - 1)
+                    {
+                        if (childrenNumberIncrement == 0 || childrenNumberIncrement == totalRows - increment)
+                        {
+                            Console.Write($"  {numberOne}");
+                            listOne.Add(numberOne);
+                        }
+                        else
+                        {
+                            resultOperations = listTwo[indexOne] + listTwo[indexTwo];
+                            Console.Write($"  {resultOperations}");
+                            listOne.Add(resultOperations);
+                            indexOne++;
+                            indexTwo++;
+                        }
+                    }
+                }
+                Console.WriteLine();
+                listTwo.Clear();
+                listOne.ForEach(x => listTwo.Add(x));
+                listOne.Clear();
+                indexOne = 0; // Reset Parameter
+                indexTwo = 1; // Reset Parameter
+            }
+            
             Console.WriteLine("\n\n----------|    \"END\"    |----------");
             Console.Read();
         }
-        private static void BuildTrianglePascal()
-        {
-            for (increment = totalRows; increment != 0; increment--)
-            {
-                SpaceWhiteDraw();
-                NumberTriangleDraw();
-                Console.WriteLine();
-                ListOneToListTwo();
-            }
-        }
-        private static void NumberTriangleDraw()
-        {
-            for (childrenNumberIncrement = 0; childrenNumberIncrement <= totalRows - increment; childrenNumberIncrement++)
-            {
-                if (increment == totalRows)
-                {
-                    PutNumberOne();
-                }
-                else if (increment == totalRows - 1)
-                {
-                    PutNumberOne();
-                }
-                if (increment != totalRows && increment != totalRows - 1)
-                {
-                    if (childrenNumberIncrement == 0 || childrenNumberIncrement == totalRows - increment)
-                    {
-                        PutNumberOne();
-                    }
-                    else
-                    {
-                        DoCalculation();
-                    }
-                }
-            }
-        }
-        private static void SpaceWhiteDraw()
-        {
-            for (childrenWhiteIncrement = 0; childrenWhiteIncrement < increment; childrenWhiteIncrement++)
-                Console.Write(" ");
-        }
-        private static void DoCalculation()
-        {
-            resultOperations = listTwo[indexOne] + listTwo[indexTwo];
-            Console.Write($"  {resultOperations}");
-            listOne.Add(resultOperations);
-            indexOne++;
-            indexTwo++;
-        }
-        private static void PutNumberOne()
-        {
-            Console.Write($"  {numberOne}");
-            listOne.Add(numberOne);
-        }
-        private static void ListOneToListTwo()
-        {
-            listTwo.Clear();
-            listOne.ForEach(x => listTwo.Add(x));
-            listOne.Clear();
-            indexOne = 0; // Reset Parameter
-            indexTwo = 1; // Reset Parameter
-        }
     }
+
 }
