@@ -6,31 +6,23 @@ namespace Triangle_Of_Pascal
     class Program
     {
         //Cant Rows of triangle
-        static int totalRows = 9;     //<-------- Put number of cant rows of triangle.
-
+        static int totalRows = 20;     //<-------- Put number of cant rows of triangle.
         //Var
-        static int a = 0;
-        static int b = 1;
+        static int indexOne = 0;
+        static int indexTwo = 1;
         static int increment = 0;
         static int childrenWhiteIncrement = 0;
         static int childrenNumberIncrement = 0;
         static int resultOperations = 0;
         const int numberOne = 1;
-
         //Arrays
         static List<int> listOne = new List<int>(); //Main List 
         static List<int> listTwo = new List<int>(); //List One Duplicate
         static void Main(string[] args)
         {
-            Console.WriteLine("----------|   Triangle Of Pascal   |----------");
-            Console.WriteLine();
-            Console.WriteLine();
-
+            Console.WriteLine("----------|   Triangle Of Pascal   |----------\n\n");
             BuildTrianglePascal();
-
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("----------|    END    |----------");
+            Console.WriteLine("\n\n----------|    \"END\"    |----------");
             Console.Read();
         }
         private static void BuildTrianglePascal()
@@ -75,11 +67,11 @@ namespace Triangle_Of_Pascal
         }
         private static void DoCalculation()
         {
-            resultOperations = listTwo[a] + listTwo[b];
+            resultOperations = listTwo[indexOne] + listTwo[indexTwo];
             Console.Write($"  {resultOperations}");
             listOne.Add(resultOperations);
-            a++;
-            b++;
+            indexOne++;
+            indexTwo++;
         }
         private static void PutNumberOne()
         {
@@ -91,8 +83,8 @@ namespace Triangle_Of_Pascal
             listTwo.Clear();
             listOne.ForEach(x => listTwo.Add(x));
             listOne.Clear();
-            a = 0; // Reset Parameter
-            b = 1; // Reset Parameter
+            indexOne = 0; // Reset Parameter
+            indexTwo = 1; // Reset Parameter
         }
     }
 }
